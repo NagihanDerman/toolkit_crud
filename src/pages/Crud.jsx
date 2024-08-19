@@ -13,7 +13,7 @@ const Crud = () => {
 
   // modal açık mı?
   const [isOpen, setIsOpen] = useState(false);
-  // düzenlenicek olan eleman
+  // düzenlenecek olan eleman
   const [editItem, setEditItem] = useState(null);
 
   const dispatch = useDispatch();

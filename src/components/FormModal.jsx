@@ -10,13 +10,13 @@ const FormModal = ({ editItem, isOpen, handleClose }) => {
     // yenilemeyi engelle
     e.preventDefault();
 
-    // formdata örneği olutur
+    // formdata örneği olustur
     const formData = new FormData(e.target);
 
     // inputlardaki verileri bir nesneye aktar
     const taskData = Object.fromEntries(formData.entries());
 
-    // düzenlenicek görev state'i null değilse
+    // düzenlenecek görev state'i null değilse
     if (editItem) {
       // reducer'daki görevi güncelle
       dispatch(editTask({ id: editItem.id, ...taskData }));

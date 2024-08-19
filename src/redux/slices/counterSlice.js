@@ -1,11 +1,3 @@
-/*
- * createSlice methodu import edilir
- * createSlice'in istedği parametreler
- * - - name: slice ismi > string
- * - - initialState: başlangıç state'i
- * - - reducers: aksiyonların görevlerini tanımladığımız fonksiyonlar
- */
-
 import { createSlice } from "@reduxjs/toolkit";
 
 const counterSlice = createSlice({
